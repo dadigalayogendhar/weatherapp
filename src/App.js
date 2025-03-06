@@ -8,7 +8,7 @@ const [city,setcity] = useState('');
 const[weatherInfo,setweatherInfo] = useState(null);
 
 function getweather() {
-
+//weather apikey
   const apiKey = '8c21c6d3ffb0d2fc5cb428690c577fe2';
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -30,14 +30,8 @@ function getweather() {
     };
 
     setweatherInfo(weather);
-
-
-   });
-
-
-
-
-
+ }
+        );
 }
 
   return (
